@@ -428,7 +428,7 @@ function mybotpic() {
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Flash-Md',
+                                        pack: 'Wavy Worlds',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -526,7 +526,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Flash-Md',
+                pack: 'Wavy Worlds',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -670,7 +670,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `◇FLASH-MD◇
+            let msg = `◇Zay Bot◇
 `;
              
             let membres = group.participants;
@@ -688,7 +688,7 @@ zk.ev.on('group-participants.update', async (group) => {
 
 ${metadata.desc}
 
-📌Powred by *France King®🐐*`;
+📌Powred by *Wavy Worlds*`;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
@@ -858,10 +858,10 @@ ${metadata.desc}
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
                 let cmsg = `
-*『𝐅𝐋𝐀𝐒𝐇-𝐌𝐃 is CONNECTED』*
+*『Zaybot is CONNECTED』*
 
      
-║❒Creator: *France King*
+║❒Creator: *ZAY*
 ║❒Prefix : [ ${prefixe} ]
 ║❒Mode :${md}
 ║❒Created on : *22.2.2024*
@@ -870,17 +870,17 @@ ${metadata.desc}
      ▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚
      ▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚
  
-║❒ _Join *FLASH-MD* Channel for Updates_
-https://whatsapp.com/channel/0029VaTbb3p84Om9LRX1jg0P
+║❒ _Join *WAVY WORLDS* Community for Updates_
+https://chat.whatsapp.com/FLC80Wphnys72lRltjYgib
 
 ║❒ *JOIN OUR WhatsApp Gʀᴏᴜᴘ*
-https://chat.whatsapp.com/CtBGmUkwXiA6kGYAyU5MaX
+https://chat.whatsapp.com/FLC80Wphnys72lRltjYgib
 
 ║❒ *FOLLOW THE DEVELOPER* 🪄 
-https://instagram.com/france.king1 
+https://instagram.com/wavyworldsgh 
 
 
-              *𝐅𝐋𝐀𝐒𝐇-𝐌𝐃*`;
+              *Zaybot*`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
             }
